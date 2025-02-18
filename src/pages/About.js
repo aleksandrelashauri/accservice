@@ -17,7 +17,7 @@ function About() {
                     ვართ ბიზნესის წარმატებისთვის. </p>
                 <p className="pt-1"> კითხვების შემთხვევაში დაგვიკავშირდით: </p>
                 <p> საკონტაქტო ტელეფონი:+995 577 21 08 60  </p>
-                <p>  ელ-ფოსტა: offers.aservice@gmail.com </p>
+                <p>  ელ-ფოსტა: offers.accservice@gmail.com </p>
             </div>
         </div>
     );
