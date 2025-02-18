@@ -6,7 +6,7 @@ import Logo from '../Assets/minilogo-accservice.png';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [setIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const location = useLocation();
@@ -18,7 +18,7 @@ function Header() {
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [isScrolled]);
 
     const isActivePath = (path) => {
         return location.pathname === path;
@@ -94,7 +94,7 @@ function Header() {
           backdrop-blur bg-gradient-to-b from-[#2D2862] to-transparent to-100%}`}>
                 <div className="opacity: 1; transform: none;">
                     <a className="logo flex items-center gap-2 text-white no-underline "
-                        href="/"><img src={Logo} alt="logo"
+                        href="/"><img src={Logo} alt="company logo"
                             width="40" height="40" className="rounded-xl" />
                         <h1 className="font-bold my-auto">aservice</h1>
                     </a>

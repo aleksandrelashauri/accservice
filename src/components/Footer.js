@@ -8,7 +8,7 @@ function Footer() {
                 <div className="flex flex-col md:flex-row justify-around gap-8">
                     <div>
                         <a className="text-xl flex justify-center sm:justify-start gap-2 text-white no-underline pb-1" href="/">
-                            <img src={Logo} alt="logo" width="40" height="40" />
+                            <img src={Logo} alt="company ogo" width="40" height="40" />
                             <h5 className="font-bold my-auto">aservice</h5></a>
                         <ul>
                             <div><a className="mt-2 text-yellow-500 hover:text-yellow-600 duration-100"

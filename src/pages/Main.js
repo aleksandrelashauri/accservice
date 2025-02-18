@@ -111,7 +111,7 @@ function Main() {
                 <div className="w-full md:w-1/2 flex justify-center">
                     <img
                         src={brainHouseLogo}
-                        alt="Brain House Logo"
+                        alt="acc service  Logo"
                         className="max-w-[250px] md:max-w-md"
                     />
                 </div>
