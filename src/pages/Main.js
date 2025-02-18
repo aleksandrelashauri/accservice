@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import aboutImg from '../Assets/about.jpg';
+// import aboutImg from '../Assets/about.jpg';
 import aboutUsImg from '../Assets/aboutus.jpg';
-import contactImg from '../Assets/contact.jpg';
+// import contactImg from '../Assets/contact.jpg';
 import brainHouseLogo from '../Assets/logo-accservice.png';
 import ServiceOverview from './ServiceOverview';
 import ContactForm from '../components/ContactForm';
@@ -9,20 +9,22 @@ import PriceManagement from '../components/PriceManagement';
 
 function Main() {
     // Add state for tracking current slide
-    const [currentSlide, setCurrentSlide] = React.useState(0);
+    const [currentSlide,
+        // setCurrentSlide
+    ] = useState(0);
     const serviceOverviewRef = useRef(null);
 
     // Updated array with imported images
     const images = [aboutUsImg,];
 
     // Navigation functions
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % images.length);
-    };
+    // const nextSlide = () => {
+    //     setCurrentSlide((prev) => (prev + 1) % images.length);
+    // };
 
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-    };
+    // const prevSlide = () => {
+    //     setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    // };
 
     const scrollToServices = () => {
         if (serviceOverviewRef.current) {

@@ -1,10 +1,12 @@
+import React from "react";
+
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../Assets/minilogo-accservice.png';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [setIsScrolled] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const location = useLocation();

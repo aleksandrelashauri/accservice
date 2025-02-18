@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function TheoryCourse() {
     const [assets, setAssets] = useState([]);
-    const [imageUrl, setImageUrl] = useState(null);
+    const [imageUrl] = useState(null);
     const [selectedTopic, setSelectedTopic] = useState('');
     const [imageFiles, setImageFiles] = useState([]);
 
@@ -48,10 +48,10 @@ function TheoryCourse() {
             .catch(error => console.error('Error fetching folder contents:', error));
     };
 
-    const fetchImage = async (imagePath) => {
-        const imageUrl = `https://raw.githubusercontent.com/imgeorge1/tickets/master/${imagePath}`;
-        setImageUrl(imageUrl);
-    };
+    // const fetchImage = async (imagePath) => {
+    //     const imageUrl = `https://raw.githubusercontent.com/imgeorge1/tickets/master/${imagePath}`;
+    //     setImageUrl(imageUrl);
+    // };
 
     // Handle answer selection
     const handleAnswerSelect = (imageName, answer) => {
