@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../Assets/minilogo-accservice.png';
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -11,11 +12,11 @@ function Footer() {
                             <img src={Logo} alt="company ogo" width="40" height="40" />
                             <h5 className="font-bold my-auto">aservice</h5></a>
                         <ul>
-                            <div><a className="mt-2 text-yellow-500 hover:text-yellow-600 duration-100"
-                                title="წესები, პირობები და მონაცემთა დაცვა" href="/policy">წესები, პირობები და მონაცემთა დაცვა</a>
+                            <div><Link className="mt-2 text-yellow-500 hover:text-yellow-600 duration-100"
+                                title="წესები, პირობები და მონაცემთა დაცვა" to="/policy">წესები, პირობები და მონაცემთა დაცვა</Link>
                             </div>
                             {/* <div><a href="/buy-course"><p className="mt-3 text-yellow-500  hover:text-yellow-600 duration-150">თეორიის კურსის შეძენა</p></a></div> */}
-                            <div><a href="/about"><p className="mt-3 text-yellow-500  hover:text-yellow-600 duration-150">ჩვენ შესახებ</p></a></div>
+                            <div><Link to="/about"><p className="mt-3 text-yellow-500  hover:text-yellow-600 duration-150">ჩვენ შესახებ</p></Link></div>
                             {/* <div><a href="/theory-info"><p className="mt-3 text-yellow-500  hover:text-yellow-600 duration-150">თეორიული კურსი</p></a></div> */}
                         </ul>
                     </div>
