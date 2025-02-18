@@ -1,5 +1,5 @@
 import { FaFacebook } from 'react-icons/fa';
-import Logo from '../Assets/minilogo-accservice.png';
+import Logo from '../Assets/minilogo-aservice.png';
 
 function Footer() {
     return (
@@ -9,7 +9,7 @@ function Footer() {
                     <div>
                         <a className="text-xl flex justify-center sm:justify-start gap-2 text-white no-underline pb-1" href="/">
                             <img src={Logo} alt="logo" width="40" height="40" />
-                            <h5 className="font-bold my-auto">accservice</h5></a>
+                            <h5 className="font-bold my-auto">aservice</h5></a>
                         <ul>
                             <div><a className="mt-2 text-yellow-500 hover:text-yellow-600 duration-100"
                                 title="წესები, პირობები და მონაცემთა დაცვა" href="/policy">წესები, პირობები და მონაცემთა დაცვა</a>

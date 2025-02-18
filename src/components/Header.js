@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../Assets/minilogo-accservice.png';
+import Logo from '../Assets/minilogo-aservice.png';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,7 +94,7 @@ function Header() {
                     <a className="logo flex items-center gap-2 text-white no-underline "
                         href="/"><img src={Logo} alt="logo"
                             width="40" height="40" className="rounded-xl" />
-                        <h1 className="font-bold my-auto">accservice</h1>
+                        <h1 className="font-bold my-auto">aservice</h1>
                     </a>
                 </div>
                 {/* Desktop Navigation - Now centered */}

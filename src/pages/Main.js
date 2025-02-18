@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import aboutImg from '../Assets/about.jpg';
 import aboutUsImg from '../Assets/aboutus.jpg';
 import contactImg from '../Assets/contact.jpg';
-import brainHouseLogo from '../Assets/logo-accservice.png';
+import brainHouseLogo from '../Assets/logo-aservice.png';
 import ServiceOverview from './ServiceOverview';
 import ContactForm from '../components/ContactForm';
 import PriceManagement from '../components/PriceManagement';
@@ -99,7 +99,7 @@ function Main() {
             </div>
             <section ref={serviceOverviewRef} className="container mx-auto px-4 py-8 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="w-full md:w-1/2">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">accservice...</h2>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">aservice...</h2>
                     <div className="space-y-3 md:space-y-4">
                         <p className="text-base md:text-lg">კომუნიკაცია ადვილია!</p>
                         <p className="text-base md:text-lg">დოკუმენტების დამზადება შესაძლებელია ნებისმიერი ქვეყნიდან, ქალაქიდან ან სოფლიდან!</p>
