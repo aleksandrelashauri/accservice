@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../Assets/minilogo-aservice.png';
+import Logo from '../Assets/minilogo-accservice.png';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

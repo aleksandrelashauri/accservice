@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import aboutImg from '../Assets/about.jpg';
 import aboutUsImg from '../Assets/aboutus.jpg';
 import contactImg from '../Assets/contact.jpg';
-import brainHouseLogo from '../Assets/logo-aservice.png';
+import brainHouseLogo from '../Assets/logo-accservice.png';
 import ServiceOverview from './ServiceOverview';
 import ContactForm from '../components/ContactForm';
 import PriceManagement from '../components/PriceManagement';
