@@ -194,7 +194,7 @@ function Header() {
                                     <div className="flex justify-center items-start px-4 py-2 ">
                                         <button
                                             className="
-            px-6 py-2
+            px-2 py-2
             font-semibold transition-all
             hover:bg-orange-500
             text-white
@@ -209,10 +209,10 @@ function Header() {
                                 </div>
 
                                 {/* Menu Links */}
-                                <div className="flex flex-col items-center px-4 pt-6">
+                                <div className="flex flex-col items-center  px-4 pt-6">
                                     <Link
                                         to="/"
-                                        className={`block w-full text-white px-4 py-2 text-left border-b-2 ${isActivePath('/') ? 'border-[#fe6d46]' : 'border-transparent hover:border-[#fe6d46]'
+                                        className={`block w-full text-white py-2  border-b-2 ${isActivePath('/') ? 'border-[#fe6d46]' : 'border-transparent hover:border-[#fe6d46]'
                                             }`}
                                     >
 
@@ -222,23 +222,23 @@ function Header() {
                                     </Link>
                                     <Link
                                         to="/about"
-                                        className={`block w-full text-white px-4 py-2 text-left border-b-2 ${isActivePath('/about') ? 'border-[#fe6d46]' : 'border-transparent hover:border-[#fe6d46]'
+                                        className={`block w-full text-white  py-2  border-b-2 ${isActivePath('/about') ? 'border-[#fe6d46]' : 'border-transparent hover:border-[#fe6d46]'
                                             }`}
                                     >
                                         <button
                                             onClick={() => setIsMenuOpen(false)}
                                         >ჩვენს შესახებ</button>
                                     </Link>
-                                    {/* <Link
-                                        to="/theory-course"
-                                        className={`block w-full text-white px-4 py-2 text-left border-b-2 ${isActivePath('/theory-course') ? 'border-[#fe6d46]' : 'border-transparent hover:border-[#fe6d46]'
+                                    <Link
+                                        to="/why"
+                                        className={`block w-full text-white  py-2  border-b-2 ${isActivePath('/why') ? 'border-[#fe6d46]' : 'border-transparent hover:border-[#fe6d46]'
                                             }`}
                                     >
                                         <button
                                             onClick={() => setIsMenuOpen(false)}
-                                        >    თეორიის კურსი</button>
+                                        >      რატომ გჭირდებით</button>
 
-                                    </Link> */}
+                                    </Link>
                                 </div>
                             </div>
                         </>

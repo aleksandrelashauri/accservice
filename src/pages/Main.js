@@ -8,6 +8,7 @@ import ContactForm from '../components/ContactForm';
 import PriceManagement from '../components/PriceManagement';
 // import WhyWorkOurService from './WhyWorkOurService';
 import { Link } from 'react-router-dom';
+import Clock from '../components/Clock';
 
 function Main() {
     // Add state for tracking current slide
@@ -119,7 +120,10 @@ function Main() {
             <ServiceOverview />
             <div className='flex flex-col md:flex-row items-center justify-center'>
                 <ContactForm />
-                <PriceManagement />
+                <div className='flex flex-col items-center justify-around'>
+                    <Clock />
+                    <PriceManagement />
+                </div>
             </div>
         </div>
     );

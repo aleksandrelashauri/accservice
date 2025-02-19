@@ -34,9 +34,28 @@ function PriceManagement() {
         return price.toFixed(2); // Return price with 2 decimal places
     };
 
+    // Function to format time from minutes to days, hours, and minutes
+    // const formatTime = (minutes) => {
+    //     const days = Math.floor(minutes / 1440); // 1 day = 1440 minutes
+    //     let hours = Math.floor((minutes % 1440) / 60); // Calculate hours
+    //     const mins = minutes % 60; // Remaining minutes
+
+    //     // Convert hours beyond 8 into additional days
+    //     const additionalDays = Math.floor(hours / 8);
+    //     const remainingHours = hours % 8; // Remaining hours after converting to days
+
+    //     const totalDays = days + additionalDays; // Total days including additional days
+
+    //     let result = [];
+    //     if (totalDays > 0) result.push(`${totalDays} დღე`);
+    //     if (remainingHours > 0) result.push(`${remainingHours} საათი`);
+    //     if (mins > 0) result.push(`${mins} წუთი`);
+
+    //     return result.join(' და ').replace(/და$/, '').trim();
+    // };
 
     return (
-        <div className="py-16 bg-gray-200  px-16">
+        <div className="py-16 bg-gray-200 px-16">
             <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">ფასების პოლიტიკა</h2>
             <div className="mb-4">
                 <label htmlFor="tourists" className="block text-sm font-medium text-gray-700">ტურისტების რაოდენობა</label>
@@ -49,11 +68,14 @@ function PriceManagement() {
                 />
             </div>
             <div className="text-lg font-semibold">
-                შექმნილი დოკუმენტი  <span className="text-green-600">{(tourists * 3)} </span>
+                შექმნილი დოკუმენტი <span className="text-green-600">{(tourists * 3)} </span>
             </div>
             <div className="text-lg font-semibold">
                 სრული ფასი <span className="text-green-600">{calculatePrice(tourists)} GEL</span>
             </div>
+            {/* <div className="text-lg font-semibold">
+                დაზოგილი დრო <span className="text-green-600">{formatTime(tourists * 10)}</span>
+            </div> */}
         </div>
     );
 }
