@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Main from './pages/Main';
 import About from './pages/About';
 import Policy from './pages/Policy';
+import WhyWorkOurService from "./pages/WhyWorkOurService";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/about" element={<About />} />
             <Route path="/policy" element={<Policy />} />
+            <Route path="/why" element={<WhyWorkOurService />} />
           </Routes>
         </main>
         <Footer />

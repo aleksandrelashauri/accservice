@@ -113,6 +113,12 @@ function Header() {
                     >
                         ჩვენს შესახებ
                     </Link>
+                    <Link
+                        to="/why"
+                        className={`text-white hover:text-white/90  border-b-2 transition-all ${isActivePath('/why') ? 'border-[#fe6d46]' : 'border-transparent hover:border-[#fe6d46]'}`}
+                    >
+                        რატომ გჭირდებით
+                    </Link>
                 </div>
 
                 <div className="flex items-center gap-4">

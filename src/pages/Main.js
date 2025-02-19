@@ -6,6 +6,8 @@ import brainHouseLogo from '../Assets/logo-accservice.png';
 import ServiceOverview from './ServiceOverview';
 import ContactForm from '../components/ContactForm';
 import PriceManagement from '../components/PriceManagement';
+// import WhyWorkOurService from './WhyWorkOurService';
+import { Link } from 'react-router-dom';
 
 function Main() {
     // Add state for tracking current slide
@@ -86,7 +88,7 @@ function Main() {
                     <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">aservice...</h2>
                     <div className="space-y-2 md:space-y-3">
                         <p className="text-base md:text-lg">კომუნიკაცია ადვილია!</p>
-                        <p className="text-base md:text-lg">დოკუმენტების დამზადება შესაძლებელია ნებისმიერი ქვეყნიდან, ქალაქიდან ან სოფლიდან!</p>
+                        <p className="text-base md:text-lg">დოკუმენტების დამზადება შესაძლებელია ნებისმიერი ქვეყნიდან, ქალაქიდან ან რეგიონიდან!</p>
                         <p className="text-base md:text-lg">დოკუმენტები ყოველთვის ხელმისაწვდომია!</p>
                     </div>
                 </div>
@@ -98,6 +100,22 @@ function Main() {
                     />
                 </div>
             </section>
+            <div className='flex flex-col md:flex-row items-center justify-center p-6 bg-gray-100 rounded-lg shadow-lg space-y-4 md:space-y-0 md:space-x-6'>
+                {/* Title */}
+                <h1 className='text-lg font-semibold text-gray-800 text-center md:text-left'>
+                    რატომ გჭირდება ჩვენი სერვისი
+                </h1>
+
+                {/* Button */}
+                <Link
+                    to={'/why'}
+                    className="animate-bounce bg-[rgb(45,40,98)] text-white px-6 py-3 rounded-full shadow-md hover:bg-opacity-90 hover:shadow-lg transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50"
+                >
+                    გაიგეთ მეტი
+                </Link>
+            </div>
+
+
             <ServiceOverview />
             <div className='flex flex-col md:flex-row items-center justify-center'>
                 <ContactForm />

@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useState } from 'react';
 
 function PriceManagement() {
@@ -50,7 +49,7 @@ function PriceManagement() {
                 />
             </div>
             <div className="text-lg font-semibold">
-                შექმნილი დოკუმენტი  <span className="text-green-600">{(tourists * 2)} </span>
+                შექმნილი დოკუმენტი  <span className="text-green-600">{(tourists * 3)} </span>
             </div>
             <div className="text-lg font-semibold">
                 სრული ფასი <span className="text-green-600">{calculatePrice(tourists)} GEL</span>
